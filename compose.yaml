@@ -1,0 +1,27 @@
+services:
+    jupyter:
+        image: lab3and4image
+        volumes:
+            - ./:/Lab3and4
+        env_file:
+            - .env
+        ports:
+            - "8891:8888"
+        networks: 
+            - lab3network
+    
+    postgres:
+        image: postgres:latest
+        env_file:
+            - .env
+        volumes:
+            - postgresdata:/var/lib/postgresql/data
+        ports:
+            - "5432:5432"
+        networks:
+            - lab3network
+
+volumes:
+    postgresdata:
+networks:
+    lab3network:

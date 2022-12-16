@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+#Data
+*.csv  
+Country_Year_V-Dem_Core_CSV_v12/   
+__MACOSX/ 
+
 # Distribution / packaging
 .Python
 build/
@@ -32,7 +37,6 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
-
 
 # Installer logs
 pip-log.txt
@@ -132,4 +136,4 @@ dmypy.json
 #Data
 *.csv  
 Country_Year_V-Dem_Core_CSV_v12/   
-__MACOSX/  
+__MACOSX/ 
